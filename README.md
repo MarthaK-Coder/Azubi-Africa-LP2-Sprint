@@ -2,7 +2,7 @@
 
 
 <div align="right">
-  <img src="635_vodafone.png" alt="Image" width="400" height="400">
+  <img src="635_vodafone.jpg" alt="Image" width="400" height="400">
 </div>
 This is repository containing a summary of project done in LP2 Azubi Sprint
 

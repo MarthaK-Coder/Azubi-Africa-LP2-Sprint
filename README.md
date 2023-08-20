@@ -1,8 +1,8 @@
-# PREDICTING CUSTOMER CHURN FOR VODAFONE USING CLASSIFICATION MODEL
 ## PREDICTING CUSTOMER CHURN FOR VODAFONE USING CLASSIFICATION MODEL <a name="PREDICTING CUSTOMER CHURN FOR VODAFONE USING CLASSIFICATION MODEL"></a>
 
+
 <div align="right">
-  <img src="635_vodafone.png" alt="Image" width="200" height="200">
+  <img src="635_vodafone.png" alt="Image" width="400" height="400">
 </div>
 This is repository containing a summary of project done in LP2 Azubi Sprint
 
@@ -12,11 +12,11 @@ The Churn Analysis using Classification Model project aims to predict customer c
 In this project we using the CRISP -DM Frame work to guide in our analysis
 
 # Table of Contents
-- [BusinessUnderstanding](#Business Understanding)
-- [DataPreparation](#Data Preparation)
+- [Business Understanding](#Business Understanding)
+- [Data Preparation](#Data Preparation)
 - [Modelling](#Modelling)
 - [Evaluation](#Evaluation)
-- [ConclusionandInsights](#Data Preparation)
+- [Conclusion and Insights](#Conclusion and Insights)
 ## Business Understanding <a name="Business Understanding"></a>
 The objective of this project is to help a Vodafone telecommunications company use classification models to gain insight into their customer data, determine the lifetime value of each customer, pinpoint the major variables affecting customer churn rates, and create predictive models to ascertain whether a customer will leave or not.
 The stakeholders in this project are : 
@@ -32,13 +32,16 @@ The stakeholders in this project are :
 ## Data Preparation <a name="Data Preparation"></a>
 The data preparation step is a crucial phase that lays the groundwork for effective analysis and modeling. In this phase, we focused on collecting, assessing, and enhancing the raw data to ensure its quality and suitability for further analysis.
 
-Data Collection from Azubi Database
+**Data Collection from Azubi Database**
+
 We initiated the data collection process by interfacing with the Azubi Database using Python. By leveraging Python's database connectivity tools, we extracted the relevant data sets required for our churn analysis project. This enabled us to ensure that we had access to the most accurate and up-to-date information directly from the source.
 
-Reading Excel and CSV Files
+**Reading Excel and CSV Files**
+
 In addition to the Azubi Database data, we integrated supplementary information by reading Excel and CSV files. These files contained valuable details about customer attributes, transaction histories, and related factors. By employing Python's data manipulation libraries, we imported and harmonized these external data sources, ensuring a comprehensive and enriched dataset.
 
-Answering Smart Questions - Exploratory Data Analysis (EDA) and Hypothesis Testing
+**Answering Smart Questions - Exploratory Data Analysis (EDA) and Hypothesis Testing**
+
 The data preparation phase also involved exploring the data to uncover insights and answer relevant questions. Through Exploratory Data Analysis (EDA), we delved into the dataset's characteristics, distributions, correlations, and potential patterns. This helped us understand the data's underlying structure and identify initial trends.
 
 Additionally, we formulated and tested hypotheses based on our domain knowledge and business objectives. Hypothesis testing allowed us to validate assumptions and uncover relationships between variables that could be significant for churn analysis.
@@ -50,11 +53,13 @@ Overall, the data preparation step played a vital role in curating a high-qualit
 The modeling phase involves building, training, and evaluating various classification models to identify the best-performing model for our churn analysis project. In this phase, we followed a structured approach to ensure that we select the most accurate and effective model.
 
 **Data Splitting and Balancing**
+
 We began by splitting the dataset into training and testing sets. This separation allowed us to assess the model's performance on unseen data, providing a realistic measure of its effectiveness.
 
 To address class imbalance, we employed techniques such as oversampling or undersampling to create a balanced training dataset. This ensured that the model was trained on representative samples from both churn and non-churn classes.
 
 **Initial Model Creation and Evaluation**
+
 We then proceeded to create, train, and evaluate several classification models, including:
 
 Logistic Regression
@@ -66,11 +71,13 @@ Quadratic Discriminant Analysis (QDA)
 We evaluated these models using the accuracy score as a performance metric. Based on the initial evaluation, we identified the Random Forest Classifier (RFC) as the best-performing model.
 
 **Advanced Model Training with Hyperparameter Tuning**
+
 With the RFC identified as the most promising model, we performed advanced model training by tuning its hyperparameters. This involved using GridSearchCV to systematically explore different hyperparameter combinations and identify the optimal settings.
 
 After hyperparameter tuning, we once again compared the performance of the six models using the accuracy score. This step allowed us to gauge the improvements achieved through hyperparameter tuning and determine the final best-performing model.
 
 **Model Selection and Conclusion**
+
 After completing the hyperparameter tuning process, we observed an improvement in the accuracy score, with the RFC model consistently outperforming the other models. Therefore, we concluded that the Random Forest Classifier (RFC) was the optimal choice for our churn analysis project.
 
 The modeling phase was pivotal in identifying the most accurate and reliable model for predicting customer churn. By systematically evaluating various models and refining their performance through hyperparameter tuning, we ensured that our chosen model would provide robust and actionable insights for addressing the project's objectives.
@@ -79,12 +86,15 @@ The modeling phase was pivotal in identifying the most accurate and reliable mod
 The evaluation phase involves assessing the performance of our chosen model and deriving insights from its predictions. In this phase, we focused on predicting churn on the X-test set using the best estimator (Random Forest Classifier) obtained from the modeling phase.
 
 **Predictions and Churn Rate Calculation**
+
 We used the best-performing model, the Random Forest Classifier (RFC), to predict churn on the X-test set. By applying the model to the unseen data, we generated predictions that allowed us to classify customers into churn and non-churn categories. From these predictions, we calculated the churn rate by determining the proportion of customers predicted as churned out of the total.
 
 **Churn Rate Analysis**
+
 Analyzing the churn rate distribution from the model's predictions provided valuable insights. Notably, we observed that the "no churn" rate had the highest percentage among the total outcomes. This observation suggests that the dataset's features contribute to the model's prediction of non-churn cases.
 
 **Feature Importance Analysis**
+
 To delve deeper into the factors influencing the churn rate, we conducted a feature importance analysis. This analysis involved ranking the features based on their impact on the churn rate. The results highlighted the following features as having the largest impact on predicting churn rate:
 
 Contract_Month-to-month

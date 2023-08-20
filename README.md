@@ -2,7 +2,7 @@
 
 
 <div align="right">
-  <img src="C:\Users\marth\OneDrive - Azubi Africa\Sprints\LP2\Azubi-Africa-LP2-Sprint\Img" alt="Image" width="200" height="200">
+  <img src="C:\Users\marth\OneDrive - Azubi Africa\Sprints\LP2\Azubi-Africa-LP2-Sprint\Img.jpg" alt="Image" width="200" height="200">
 </div>
 This is repository containing a summary of project done in LP2 Azubi Sprint
 

@@ -2,7 +2,7 @@
 
 
 <div align="right">
-  <img src="635_vodafone.jpg" alt="Image" width="400" height="400">
+  <img src="635_vodafone.jpg" alt="Image" width="200" height="200">
 </div>
 This is repository containing a summary of project done in LP2 Azubi Sprint
 
@@ -12,11 +12,11 @@ The Churn Analysis using Classification Model project aims to predict customer c
 In this project we using the CRISP -DM Frame work to guide in our analysis
 
 # Table of Contents
-- [Business Understanding](#Business Understanding)
-- [Data Preparation](#Data Preparation)
-- [Modelling](#Modelling)
-- [Evaluation](#Evaluation)
-- [Conclusion and Insights](#Conclusion and Insights)
+- [Business Understanding](#Business-understanding)
+- [Data Preparation](#Data-preparation)
+- [Modelling](#modelling)
+- [Evaluation](#evaluation)
+- [Conclusion and Insights](#Conclusion-and-Insights)
 ## Business Understanding <a name="Business Understanding"></a>
 The objective of this project is to help a Vodafone telecommunications company use classification models to gain insight into their customer data, determine the lifetime value of each customer, pinpoint the major variables affecting customer churn rates, and create predictive models to ascertain whether a customer will leave or not.
 The stakeholders in this project are : 
